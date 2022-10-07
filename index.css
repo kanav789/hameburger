@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+button.active{
+    transform: translateX(-100px);
+}
+
+button {
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    padding: 1rem;
+transition: transform 0.3s ease-in-out;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    background-color: purple;
+
+
+    font-weight: bolder;
+    transform: translateX(100%);
+}
+
+nav.active {
+    transform: translateX(0);
+}
+
+
+nav ul li {
+    list-style: none;
+
+
+}
+
+nav ul li a {
+    text-decoration-line: none;
+    color: white;
+    padding: 10px 10px;
+}
